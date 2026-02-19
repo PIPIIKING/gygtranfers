@@ -36,6 +36,7 @@ body {
 .hero-content {
   max-width: 900px;
   padding: 20px;
+  transform: translateY(-80px);
 }
 
 /* ============================= */
@@ -44,18 +45,15 @@ body {
 
 .logo {
   font-family: 'Montserrat', sans-serif;
-  font-size: 95px;
-  letter-spacing: 0.18em;
+  font-size: 78px;
+  letter-spacing: 0.22em;
   font-weight: 600;
-  margin-bottom: 15px;
-  color: #F5F5F5;
+  margin-bottom: 10px;
+  color: #E8E8E8;
 
   text-shadow:
-    0 1px 0 #dcdcdc,
-    0 2px 0 #cfcfcf,
-    0 3px 0 #bfbfbf,
-    0 4px 0 #aaaaaa,
-    0 5px 8px rgba(0,0,0,0.7);
+    0 1px 0 #ffffff15,
+    0 2px 3px rgba(0,0,0,0.6);
 }
 
 .logo-g {
@@ -64,10 +62,11 @@ body {
 
 .logo-amp {
   font-weight: 300;
-  font-size: 0.62em;
-  margin: 0 0.12em;
+  font-size: 0.58em;
+  margin: 0 0.10em;
   position: relative;
-  top: -8px;
+  top: -10px;
+  opacity: 0.85;
 }
 
 /* Línea dorada */
