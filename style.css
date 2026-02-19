@@ -15,12 +15,17 @@ body {
   color: #F5F5F5;
 }
 
-/* LOGO PREMIUM */
+/* LOGO EXECUTIVE */
+
 .logo {
   font-family: 'Montserrat', sans-serif;
-  font-size: 58px;
-  letter-spacing: 0.30em;
-  margin-bottom: 10px;
+  font-size: 72px;
+  letter-spacing: 0.22em;
+  margin-bottom: 5px;
+  color: #F5F5F5;
+  text-shadow: 
+    0 1px 0 rgba(0,0,0,0.8),
+    0 3px 6px rgba(0,0,0,0.6);
 }
 
 .logo-g {
@@ -29,26 +34,30 @@ body {
 
 .logo-amp {
   font-weight: 300;
-  font-size: 0.75em;
-  vertical-align: middle;
+  font-size: 0.72em;
+  margin: 0 0.15em;
+  opacity: 0.9;
 }
 
 .logo-line {
-  width: 80px;
+  width: 90px;
   height: 2px;
   background: #C6A85A;
-  margin: 15px auto 30px auto;
+  margin: 18px auto 35px auto;
 }
 
 /* HERO */
+
 .hero {
   height: 100vh;
   background:
-    linear-gradient(rgba(13,13,13,0.85), rgba(13,13,13,0.85)),
+    linear-gradient(rgba(13,13,13,0.9), rgba(13,13,13,0.9)),
     url('./imagesobelisco.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  backdrop-filter: brightness(0.9);
+}
 
   display: flex;
   flex-direction: column;
