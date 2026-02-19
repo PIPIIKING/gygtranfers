@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TKB UBERGA</title>
+<title>G&G</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -129,7 +129,7 @@ opacity:0.6;
 <body>
 
 <section class="hero">
-<h1>TKB UBERGA</h1>
+<h1>G&G</h1>
 <p>Traslados Privados · Servicio Ejecutivo en Buenos Aires</p>
 <p>Puntualidad. Profesionalismo. Confianza.</p>
 </section>
@@ -161,13 +161,13 @@ Tarifas claras y previamente acordadas. Sin sorpresas.
 </section>
 
 <section class="section fade-section">
-<h2>Compromiso TKB UBERGA</h2>
+<h2>Compromiso G&G</h2>
 <p>En cada traslado priorizamos la puntualidad, el respeto y la calidad del servicio.</p>
 <p>Servicio de traslados privados en CABA y Gran Buenos Aires.</p>
 </section>
 
 <footer>
-© 2026 TKB UBERGA · Traslados privados ejecutivos
+© 2026 G&G · Traslados privados ejecutivos
 </footer>
 
 <script>
@@ -181,6 +181,19 @@ entry.target.classList.add('visible');
 });
 },{threshold:0.2});
 sections.forEach(section=>observer.observe(section));
+</script>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
 </script>
 
 </body>
