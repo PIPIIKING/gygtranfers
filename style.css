@@ -43,13 +43,12 @@ body {
 /* LOGO 3D REAL */
 /* ============================= */
 
-.logo {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 78px;
-  letter-spacing: 0.22em;
-  font-weight: 600;
+.logo-svg {
+  width: 480px;
+  max-width: 90%;
   margin-bottom: 10px;
-  color: #E8E8E8;
+  transform: translateY(-50px);
+}
 
   text-shadow:
     0 1px 0 #ffffff15,
@@ -78,9 +77,9 @@ body {
   margin: 25px auto 40px auto;
 }
  .gold-line {
-  width: 120px;
+  width: 280px;
   height: 2px;
-  margin: 15px auto 25px auto;
+  margin: 18px auto 30px auto;
   background: linear-gradient(to right, transparent, #C6A85A, transparent);
 }
 
