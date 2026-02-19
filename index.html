@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>G & G</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,35 +15,15 @@
   <section class="hero">
   <div class="hero-content">
 
-    <svg class="logo-svg" viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
-
-  <defs>
-    <linearGradient id="metalGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="30%" stop-color="#ECECEC"/>
-      <stop offset="55%" stop-color="#DADADA"/>
-      <stop offset="75%" stop-color="#F5F5F5"/>
-      <stop offset="100%" stop-color="#CFCFCF"/>
-    </linearGradient>
-
-    <filter id="depthShadow" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.55"/>
-    </filter>
-  </defs>
-
-  <text x="50%" y="55%"
-        text-anchor="middle"
-        dominant-baseline="middle"
-        font-family="Montserrat, sans-serif"
-        font-size="150"
-        font-weight="600"
-        letter-spacing="0.28em"
-        fill="url(#metalGradient)"
-        filter="url(#depthShadow)">
-    G &amp; G
-  </text>
-
-</svg>
+    .logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  letter-spacing: 6px; /* tracking abierto */
+  font-size: 64px; /* ajustalo según necesites */
+}
+<h1 class="logo">
+  G <span class="amp">&</span> G
+</h1>
 
     <div class="gold-line"></div>
 
