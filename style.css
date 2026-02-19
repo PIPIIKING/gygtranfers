@@ -1,9 +1,11 @@
-/* RESET */
+/* ============================= */
+/* RESET GENERAL */
+/* ============================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
 }
 
 html {
@@ -13,19 +15,57 @@ html {
 body {
   background: #0D0D0D;
   color: #F5F5F5;
+  font-family: 'Inter', sans-serif;
 }
 
-/* LOGO EXECUTIVE */
+/* ============================= */
+/* HERO EXECUTIVO */
+/* ============================= */
+
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(13,13,13,0.94), rgba(13,13,13,0.94)),
+    url('./imagesobelisco.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  padding: 20px;
+}
+
+/* ============================= */
+/* LOGO MARCA REAL */
+/* ============================= */
 
 .logo {
   font-family: 'Montserrat', sans-serif;
-  font-size: 72px;
-  letter-spacing: 0.22em;
-  margin-bottom: 5px;
-  color: #F5F5F5;
-  text-shadow: 
-    0 1px 0 rgba(0,0,0,0.8),
-    0 3px 6px rgba(0,0,0,0.6);
+  font-size: 90px;
+  letter-spacing: 0.20em;
+  margin-bottom: 10px;
+
+  background: linear-gradient(
+    to bottom,
+    #FFFFFF 0%,
+    #E6E6E6 40%,
+    #CFCFCF 60%,
+    #FFFFFF 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 1px 0 rgba(0,0,0,0.9),
+    0 3px 10px rgba(0,0,0,0.8);
 }
 
 .logo-g {
@@ -34,100 +74,95 @@ body {
 
 .logo-amp {
   font-weight: 300;
-  font-size: 0.72em;
-  margin: 0 0.15em;
-  opacity: 0.9;
+  font-size: 0.65em;
+  margin: 0 0.12em;
+  opacity: 0.95;
 }
+
+/* Línea dorada sobria */
 
 .logo-line {
-  width: 90px;
+  width: 110px;
   height: 2px;
   background: #C6A85A;
-  margin: 18px auto 35px auto;
+  margin: 22px auto 40px auto;
 }
 
-/* HERO */
+/* ============================= */
+/* SUBTEXTOS HERO */
+/* ============================= */
 
-.hero {
-  height: 100vh;
-  background:
-    linear-gradient(rgba(13,13,13,0.9), rgba(13,13,13,0.9)),
-    url('./imagesobelisco.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  backdrop-filter: brightness(0.9);
-}
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  padding: 20px;
-}
-
-.hero h1 {
-  font-size: 52px;
-  letter-spacing: 4px;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.hero p {
+.hero-subtitle {
   font-size: 18px;
-  opacity: 0.9;
-  margin: 5px 0;
+  opacity: 0.85;
+  margin-bottom: 12px;
 }
 
-/* SECTIONS */
+.hero-tag {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+}
+
+/* ============================= */
+/* SECCIONES */
+/* ============================= */
+
 .section {
-  padding: 70px 20px;
+  padding: 80px 20px;
   text-align: center;
-  background: #0d0d0d;
+  background: #111111;
 }
 
 .section:nth-of-type(even) {
-  background: #111;
+  background: #151515;
 }
 
 .section h2 {
   margin-bottom: 35px;
   font-size: 30px;
   font-weight: 600;
+  letter-spacing: 0.05em;
 }
 
 .section-note {
   margin-top: 25px;
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
-/* BUTTONS */
+/* ============================= */
+/* BOTONES */
+/* ============================= */
+
 .buttons {
   margin-bottom: 20px;
 }
 
 .btn {
   display: inline-block;
-  padding: 14px 30px;
+  padding: 14px 32px;
   margin: 10px;
   background: transparent;
-  color: white;
+  color: #F5F5F5;
   text-decoration: none;
-  border: 1px solid #444;
+  border: 1px solid #333;
   border-radius: 8px;
   font-weight: 600;
+  letter-spacing: 0.05em;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background: white;
-  color: black;
+  background: #C6A85A;
+  color: #0D0D0D;
+  border-color: #C6A85A;
   transform: translateY(-3px);
 }
 
-/* FORM */
+/* ============================= */
+/* FORMULARIO */
+/* ============================= */
+
 .form-group {
   margin-bottom: 15px;
 }
@@ -136,12 +171,22 @@ input {
   padding: 14px;
   margin: 8px;
   border-radius: 6px;
-  border: none;
+  border: 1px solid #222;
+  background: #1A1A1A;
+  color: #F5F5F5;
   width: 250px;
   max-width: 90%;
 }
 
+input:focus {
+  outline: none;
+  border-color: #C6A85A;
+}
+
+/* ============================= */
 /* ANIMACIÓN SCROLL */
+/* ============================= */
+
 .fade-section {
   opacity: 0;
   transform: translateY(40px);
@@ -153,10 +198,13 @@ input {
   transform: translateY(0);
 }
 
+/* ============================= */
 /* FOOTER */
+/* ============================= */
+
 footer {
   padding: 40px;
-  background: #000;
+  background: #0D0D0D;
   font-size: 14px;
-  opacity: 0.6;
+  opacity: 0.5;
 }
