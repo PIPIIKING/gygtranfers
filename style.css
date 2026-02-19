@@ -1,15 +1,11 @@
 /* ============================= */
-/* RESET GENERAL */
+/* RESET */
 /* ============================= */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -19,13 +15,13 @@ body {
 }
 
 /* ============================= */
-/* HERO EXECUTIVO */
+/* HERO */
 /* ============================= */
 
 .hero {
   height: 100vh;
   background:
-    linear-gradient(rgba(13,13,13,0.94), rgba(13,13,13,0.94)),
+    linear-gradient(rgba(13,13,13,0.65), rgba(13,13,13,0.75)),
     url('./imagesobelisco.jpg');
   background-size: cover;
   background-position: center;
@@ -43,29 +39,23 @@ body {
 }
 
 /* ============================= */
-/* LOGO MARCA REAL */
+/* LOGO 3D REAL */
 /* ============================= */
 
 .logo {
   font-family: 'Montserrat', sans-serif;
-  font-size: 90px;
-  letter-spacing: 0.20em;
-  margin-bottom: 10px;
-
-  background: linear-gradient(
-    to bottom,
-    #FFFFFF 0%,
-    #E6E6E6 40%,
-    #CFCFCF 60%,
-    #FFFFFF 100%
-  );
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 95px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #F5F5F5;
 
   text-shadow:
-    0 1px 0 rgba(0,0,0,0.9),
-    0 3px 10px rgba(0,0,0,0.8);
+    0 1px 0 #dcdcdc,
+    0 2px 0 #cfcfcf,
+    0 3px 0 #bfbfbf,
+    0 4px 0 #aaaaaa,
+    0 5px 8px rgba(0,0,0,0.7);
 }
 
 .logo-g {
@@ -74,34 +64,35 @@ body {
 
 .logo-amp {
   font-weight: 300;
-  font-size: 0.65em;
+  font-size: 0.62em;
   margin: 0 0.12em;
-  opacity: 0.95;
+  position: relative;
+  top: -8px;
 }
 
-/* Línea dorada sobria */
+/* Línea dorada */
 
 .logo-line {
-  width: 110px;
+  width: 120px;
   height: 2px;
   background: #C6A85A;
-  margin: 22px auto 40px auto;
+  margin: 25px auto 40px auto;
 }
 
 /* ============================= */
-/* SUBTEXTOS HERO */
+/* TEXTOS HERO */
 /* ============================= */
 
 .hero-subtitle {
   font-size: 18px;
-  opacity: 0.85;
-  margin-bottom: 12px;
+  opacity: 0.9;
+  margin-bottom: 10px;
 }
 
 .hero-tag {
   font-size: 16px;
+  opacity: 0.8;
   letter-spacing: 0.05em;
-  opacity: 0.7;
 }
 
 /* ============================= */
@@ -111,7 +102,7 @@ body {
 .section {
   padding: 80px 20px;
   text-align: center;
-  background: #111111;
+  background: #111;
 }
 
 .section:nth-of-type(even) {
@@ -122,25 +113,15 @@ body {
   margin-bottom: 35px;
   font-size: 30px;
   font-weight: 600;
-  letter-spacing: 0.05em;
-}
-
-.section-note {
-  margin-top: 25px;
-  opacity: 0.75;
 }
 
 /* ============================= */
 /* BOTONES */
 /* ============================= */
 
-.buttons {
-  margin-bottom: 20px;
-}
-
 .btn {
   display: inline-block;
-  padding: 14px 32px;
+  padding: 14px 30px;
   margin: 10px;
   background: transparent;
   color: #F5F5F5;
@@ -148,7 +129,6 @@ body {
   border: 1px solid #333;
   border-radius: 8px;
   font-weight: 600;
-  letter-spacing: 0.05em;
   transition: all 0.3s ease;
 }
 
@@ -160,12 +140,8 @@ body {
 }
 
 /* ============================= */
-/* FORMULARIO */
+/* FORM */
 /* ============================= */
-
-.form-group {
-  margin-bottom: 15px;
-}
 
 input {
   padding: 14px;
@@ -178,26 +154,6 @@ input {
   max-width: 90%;
 }
 
-input:focus {
-  outline: none;
-  border-color: #C6A85A;
-}
-
-/* ============================= */
-/* ANIMACIÓN SCROLL */
-/* ============================= */
-
-.fade-section {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
-
-.fade-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* ============================= */
 /* FOOTER */
 /* ============================= */
@@ -206,5 +162,5 @@ footer {
   padding: 40px;
   background: #0D0D0D;
   font-size: 14px;
-  opacity: 0.5;
+  opacity: 0.6;
 }
