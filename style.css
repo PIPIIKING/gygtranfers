@@ -77,6 +77,12 @@ body {
   background: #C6A85A;
   margin: 25px auto 40px auto;
 }
+ .gold-line {
+  width: 120px;
+  height: 2px;
+  margin: 15px auto 25px auto;
+  background: linear-gradient(to right, transparent, #C6A85A, transparent);
+}
 
 /* ============================= */
 /* TEXTOS HERO */

@@ -15,13 +15,57 @@
   <section class="hero">
   <div class="hero-content">
 
-    <h1 class="logo">
-      <span class="logo-g">G</span>
-      <span class="logo-amp">&</span>
-      <span class="logo-g">G</span>
-    </h1>
+    <svg class="logo-svg" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
 
-    <div class="logo-line"></div>
+  <defs>
+    <!-- Gradiente blanco metálico -->
+    <linearGradient id="metalWhite" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="35%" stop-color="#E8E8E8"/>
+      <stop offset="55%" stop-color="#D6D6D6"/>
+      <stop offset="75%" stop-color="#F5F5F5"/>
+      <stop offset="100%" stop-color="#CFCFCF"/>
+    </linearGradient>
+
+    <!-- Sombra sutil -->
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <text x="50%" y="55%" text-anchor="middle"
+        font-family="Montserrat, sans-serif"
+        font-size="120"
+        font-weight="600"
+        letter-spacing="0.25em"
+        fill="url(#metalWhite)"
+        filter="url(#softShadow)">
+    G
+  </text>
+
+  <text x="50%" y="55%" text-anchor="middle"
+        font-family="Montserrat, sans-serif"
+        font-size="85"
+        font-weight="300"
+        fill="url(#metalWhite)"
+        dy="-15"
+        dx="20">
+    &
+  </text>
+
+  <text x="50%" y="55%" text-anchor="middle"
+        font-family="Montserrat, sans-serif"
+        font-size="120"
+        font-weight="600"
+        letter-spacing="0.25em"
+        fill="url(#metalWhite)"
+        dx="140">
+    G
+  </text>
+
+</svg>
+
+    <div class="gold-line"></div>
 
     <p class="hero-subtitle">
       Traslados Privados · Servicio Ejecutivo en Buenos Aires
