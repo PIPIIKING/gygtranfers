@@ -11,15 +11,40 @@ html {
 }
 
 body {
-  background: #000;
-  color: #fff;
+  background: #0D0D0D;
+  color: #F5F5F5;
+}
+
+/* LOGO PREMIUM */
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 58px;
+  letter-spacing: 0.30em;
+  margin-bottom: 10px;
+}
+
+.logo-g {
+  font-weight: 600;
+}
+
+.logo-amp {
+  font-weight: 300;
+  font-size: 0.75em;
+  vertical-align: middle;
+}
+
+.logo-line {
+  width: 80px;
+  height: 2px;
+  background: #C6A85A;
+  margin: 15px auto 30px auto;
 }
 
 /* HERO */
 .hero {
   height: 100vh;
   background:
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    linear-gradient(rgba(13,13,13,0.85), rgba(13,13,13,0.85)),
     url('./imagesobelisco.jpg');
   background-size: cover;
   background-position: center;
