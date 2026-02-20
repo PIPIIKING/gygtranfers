@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>G & G</title>
+  <title>G & G · Traslados Ejecutivos</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,46 +13,40 @@
 
   <!-- HERO -->
   <section class="hero">
-  <div class="hero-content">
+    <div class="hero-content">
 
-<h1 class="logo">
-  G <span class="amp">&</span> G
-</h1>
+      <img src="logo.png" alt="G&G Logo" class="hero-logo">
 
-    <div class="gold-line"></div>
+      <div class="gold-line"></div>
 
-    <p class="hero-subtitle">
-      Traslados Privados · Servicio Ejecutivo en Buenos Aires
-    </p>
+      <p class="hero-subtitle">
+        Traslados Privados · Servicio Ejecutivo en Buenos Aires
+      </p>
 
-    <p class="hero-tag">
-      Puntualidad. Profesionalismo. Confianza.
-    </p>
+      <a href="https://wa.me/5491138553464" class="btn-primary" target="_blank">
+        Solicitar traslado
+      </a>
 
-  </div>
-</section>
+    </div>
+  </section>
 
   <!-- CONDUCTORES -->
-  <section class="section fade-section">
-    <h2>Elegí tu conductor de confianza</h2>
+  <section class="section">
+    <h2>Elegí tu conductor</h2>
 
     <div class="buttons">
-      <a class="btn" href="https://wa.me/5491138553464" target="_blank">WhatsApp Gonzalo</a>
-      <a class="btn" href="https://wa.me/5491156553821" target="_blank">WhatsApp Gisberto</a>
+      <a class="btn-outline" href="https://wa.me/5491138553464" target="_blank">WhatsApp Gonzalo</a>
+      <a class="btn-outline" href="https://wa.me/5491156553821" target="_blank">WhatsApp Gisberto</a>
     </div>
-
-    <p class="section-note">
-      Si uno no está disponible, coordinamos internamente para garantizar tu traslado.
-    </p>
   </section>
 
   <!-- COTIZACIÓN -->
-  <section class="section fade-section">
+  <section class="section alt">
     <h2>Solicitar Cotización</h2>
 
     <div class="form-group">
-      <input id="origen" type="text" placeholder="Punto de origen">
-      <input id="destino" type="text" placeholder="Destino">
+      <input type="text" placeholder="Punto de origen">
+      <input type="text" placeholder="Destino">
     </div>
 
     <div class="form-group">
@@ -60,37 +54,21 @@
       <input type="time">
     </div>
 
-    <button class="btn">Solicitar cotización</button>
-
-    <p class="section-note">
-      Tarifas claras y previamente acordadas. Sin sorpresas.
-    </p>
+    <button class="btn-primary">Solicitar cotización</button>
   </section>
 
   <!-- COMPROMISO -->
-  <section class="section fade-section">
+  <section class="section">
     <h2>Compromiso G & G</h2>
-    <p>En cada traslado priorizamos la puntualidad, el respeto y la calidad del servicio.</p>
-    <p>Servicio de traslados privados en CABA y Gran Buenos Aires.</p>
+    <p class="section-text">
+      Puntualidad, discreción y profesionalismo en cada traslado.
+      Servicio ejecutivo en CABA y Gran Buenos Aires.
+    </p>
   </section>
 
   <footer>
     © 2026 G & G · Traslados privados ejecutivos
   </footer>
-
-  <script src="script.js"></script>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
 
 </body>
 </html>

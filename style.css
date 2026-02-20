@@ -1,6 +1,4 @@
-/* ============================= */
 /* RESET */
-/* ============================= */
 
 * {
   margin: 0;
@@ -12,21 +10,18 @@ body {
   background: #0D0D0D;
   color: #F5F5F5;
   font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* ============================= */
 /* HERO */
-/* ============================= */
 
 .hero {
   height: 100vh;
   background:
-  linear-gradient(rgba(13,13,13,0.55), rgba(13,13,13,0.65)),
-  url('./imagesobelisco.jpg');
+    linear-gradient(rgba(13,13,13,0.75), rgba(13,13,13,0.85)),
+    url('./imagesobelisco.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,116 +31,103 @@ body {
 .hero-content {
   max-width: 900px;
   padding: 20px;
-  transform: translateY(-80px);
 }
 
-/* ============================= */
-/* LOGO 3D REAL */
-/* ============================= */
-
-.logo-svg {
+.hero-logo {
   width: 480px;
-  max-width: 90%;
-  margin-bottom: 10px;
-  transform: translateY(-50px);
+  max-width: 80%;
+  margin-bottom: 30px;
 }
 
-  text-shadow:
-    0 1px 0 #ffffff15,
-    0 2px 3px rgba(0,0,0,0.6);
-}
-
-.logo-g {
-  font-weight: 600;
-}
-
-.logo-amp {
-  font-weight: 300;
-  font-size: 0.58em;
-  margin: 0 0.10em;
-  position: relative;
-  top: -10px;
-  opacity: 0.85;
-}
-
-/* Línea dorada */
-
-.logo-line {
-  width: 180px;
-  height: 2px;
-  background: #C6A85A;
-  margin: 25px auto 40px auto;
-}
- .gold-line {
-  width: 280px;
-  height: 2px;
-  margin: 18px auto 30px auto;
+.gold-line {
+  width: 220px;
+  height: 1px;
+  margin: 25px auto 35px auto;
   background: linear-gradient(to right, transparent, #C6A85A, transparent);
 }
 
-/* ============================= */
-/* TEXTOS HERO */
-/* ============================= */
-
 .hero-subtitle {
   font-size: 18px;
+  letter-spacing: 0.08em;
   opacity: 0.9;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
-.hero-tag {
-  font-size: 16px;
-  opacity: 0.8;
-  letter-spacing: 0.05em;
-}
-
-/* ============================= */
-/* SECCIONES */
-/* ============================= */
-
-.section {
-  padding: 80px 20px;
-  text-align: center;
-  background: #111;
-}
-
-.section:nth-of-type(even) {
-  background: #151515;
-}
-
-.section h2 {
-  margin-bottom: 35px;
-  font-size: 30px;
-  font-weight: 600;
-}
-
-/* ============================= */
 /* BOTONES */
-/* ============================= */
 
-.btn {
+.btn-primary {
   display: inline-block;
-  padding: 14px 30px;
+  padding: 14px 36px;
+  background: #C6A85A;
+  color: #0D0D0D;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #b89745;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 12px 28px;
   margin: 10px;
-  background: transparent;
+  border: 1px solid #333;
   color: #F5F5F5;
   text-decoration: none;
-  border: 1px solid #333;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.3s ease;
+  border-radius: 6px;
+  transition: 0.3s ease;
 }
 
-.btn:hover {
+.btn-outline:hover {
   background: #C6A85A;
   color: #0D0D0D;
   border-color: #C6A85A;
-  transform: translateY(-3px);
 }
 
-/* ============================= */
+/* SECCIONES */
+
+.section {
+  padding: 100px 20px;
+  text-align: center;
+  background: #0D0D0D;
+}
+
+.section.alt {
+  background: #111111;
+}
+
+.section h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section h2::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #C6A85A;
+  margin: 0 auto 20px auto;
+}
+
+.section-text {
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
 /* FORM */
-/* ============================= */
+
+.form-group {
+  margin-bottom: 20px;
+}
 
 input {
   padding: 14px;
@@ -154,17 +136,21 @@ input {
   border: 1px solid #222;
   background: #1A1A1A;
   color: #F5F5F5;
-  width: 250px;
+  width: 260px;
   max-width: 90%;
+  transition: 0.3s ease;
 }
 
-/* ============================= */
+input:focus {
+  border-color: #C6A85A;
+  outline: none;
+}
+
 /* FOOTER */
-/* ============================= */
 
 footer {
   padding: 40px;
-  background: #0D0D0D;
+  text-align: center;
   font-size: 14px;
-  opacity: 0.6;
+  opacity: 0.5;
 }
