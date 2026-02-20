@@ -26,6 +26,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .hero-content {
@@ -162,4 +163,32 @@ footer {
   text-align: center;
   font-size: 14px;
   opacity: 0.5;
+}
+
+.language-switch {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  font-weight: 500;
+}
+
+.language-switch a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.5);
+  transition: 0.3s ease;
+}
+
+.language-switch a:hover {
+  color: #C6A85A;
+}
+
+.language-switch .active {
+  color: #C6A85A;
+}
+
+.language-switch span {
+  margin: 0 6px;
+  color: rgba(255,255,255,0.25);
 }
