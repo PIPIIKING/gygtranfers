@@ -36,21 +36,21 @@ body {
 .hero-logo {
   width: 480px;
   max-width: 80%;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .gold-line {
-  width: 220px;
+  width: 320px;
   height: 1px;
-  margin: 25px auto 35px auto;
+  margin: 12px auto 20px auto;
   background: linear-gradient(to right, transparent, #C6A85A, transparent);
 }
 
 .hero-subtitle {
-  font-size: 18px;
-  letter-spacing: 0.08em;
-  opacity: 0.9;
-  margin-bottom: 40px;
+  font-size: 17px;
+  letter-spacing: 0.10em;
+  opacity: 0.85;
+  margin-bottom: 10px;
 }
 
 /* BOTONES */
@@ -91,13 +91,17 @@ body {
 /* SECCIONES */
 
 .section {
-  padding: 100px 20px;
+  padding: 80px 20px;
   text-align: center;
   background: #0D0D0D;
 }
 
 .section.alt {
   background: #111111;
+}
+
+.section + .section {
+  border-top: 1px solid rgba(255,255,255,0.03);
 }
 
 .section h2 {
@@ -123,6 +127,11 @@ body {
   line-height: 1.6;
 }
 
+.section-note {
+  margin-top: 20px;
+  opacity: 0.6;
+  font-size: 14px;
+}
 /* FORM */
 
 .form-group {
